@@ -1,0 +1,1701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CAT策略组合_期货组合策略</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" /> 
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="js/jquery-1.8.3.min.js"></script>
+</head>
+<body>
+<div class="top">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-12">
+             <div class="col-md-6"></div>
+             <div class="col-md-6 top_bar">
+                 <li class="lz"><a href="login.html">登录</a></li>
+                 <li>丨</li>
+                 <li class="lz"><a href="resiger.html">注册</a></li>
+                 <li>丨</li>
+                 <li><a href="">上传策略</a></li>
+                 <li>丨</li>
+                 <li><a href="">旗下APP</a></li>
+                 <li>丨</li>
+                 <li><a href="admin/mycart.html"><img src="images/icon/gwc.svg" alt=""> 购物车 <span>0</span></a></li>
+                 <li class="account"><a href="admin/admin_index.html"><img src="images/icon/touxiang.svg" alt=""> 我的账户</a>
+                    <!-- <div>
+                       <span><a href=""><img src="images/icon/touxiang.svg" alt=""> 我的账户</a></span>
+                       <span><a href="">交易账户</a></span>
+                       <span><a href="">我的策略</a></span>
+                       <span><a href="">我的订单</a></span>
+                       <span><a href="">量币充值</a></span>
+                       <span><a href="">账户设置</a></span>
+                       <span><a href="">我的消息</a></span>
+                    </div> -->
+                 </li>
+             </div>
+         </div>
+      </div>
+    </div>
+</div>
+<div class="logonav">
+   <div class="container">
+     <div class="row">
+          <div class="col-md-12">
+             <div class="col-md-6">
+               <a href="index.html">
+                <img src="images/logo.jpg" alt="">
+               </a>
+             </div>
+             <div class="col-md-6 nav">
+                 <li class="col-md-2"><a href="index.html">首页</a></li>
+                 <li class="col-md-2"><a href=""><img src="images/item.png" alt=""></a></li>
+                 <li class="col-md-2 on"><a href="combinate.html">组合</a></li>
+                 <li class="col-md-2"><a href="futures.html">期货</a></li>
+                 <li class="col-md-2"><a href="download.html">下载</a></li>
+                 <li class="col-md-2"><a href="community.html">社区</a></li>
+             </div>
+          </div>
+     </div>
+   </div>
+</div>
+<!-- 小屏导航 -->
+<div class="min_logonav">
+   <div class="container">
+     <div class="row">
+          <div class="col-md-12">
+             <div class="col-md-6">
+               <a href="index.html">
+                <img src="images/logo.png" alt="">
+               </a>
+             </div>
+             <div class="col-md-6 nav">
+                 <li class="col-md-2 on"><a href="index.html">首页</a></li>
+                 <li class="col-md-2"><a href=""><img src="images/item.png" alt=""></a></li>
+                 <li class="col-md-2"><a href="combinate.html">组合</a></li>
+                 <li class="col-md-2"><a href="futures.html">期货</a></li>
+                 <li class="col-md-2"><a href="download.html">下载</a></li>
+                 <li class="col-md-2"><a href="community.html">社区</a></li>
+             </div>
+          </div>
+     </div>
+   </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 posit">
+           <li>当前位置：</li>
+           <li><a href="index.html">首页</a></li>
+           <li>></li>
+           <li><a href="combinate.html">期货组合超市</a></li>
+        </div>
+    </div>
+</div>
+<div class="container">
+   <div class="row">
+      <div class="col-md-12">
+        <a href=""><img src="images/comban1.png"/></a>
+      </div>
+   </div>
+</div> 
+<div class="jum">
+  <div class="container">
+     <div class="row">
+          <div class="col-md-12">
+             <div class="col-md-9">
+                <h3 class="tith3">全部期货策略组合</h3>
+                <div class="col-md-12">
+                  <div class="leibie">
+                   <div>
+                      <li>类别</li>
+                      <li class="bx"><a href="">不限</a></li>
+                      <li><a href="">程序化</a></li>
+                   </div>
+                   <div>
+                      <li>起投金额</li>
+                      <li class="bx"><a href="">不限</a></li>
+                      <li><a href="">10万以下</a></li>
+                      <li><a href="">10万~50万</a></li>
+                      <li><a href="">50万~100万</a></li>
+                      <li><a href="">100万以上 </a></li>
+                   </div>
+                   <div>
+                       <li>关键字</li>
+                       <li>
+                          <input type="text">
+                          <input type="submit" value="搜索">
+                       </li>
+                   </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="paihang col-md-12">
+                   <li class="col-md-2 on">当月收益率</li>
+                   <li class="col-md-2">实盘收益率</li>
+                   <li class="col-md-2">最大回撤率</li>
+                   <li class="col-md-2">最近更新时间</li>
+                   <li class="col-md-2">策略价格</li>
+                  </div>
+                </div>
+                <div class="col-md-12 ph_con" style="display: block;">
+                    <div class="col-md-4 rmd4">
+                       <div class="charset">
+                         <h3>
+                          <a href="" class="al">R-八阵图-10w</a>
+                          <a href="" class="ar">微量帝</a>
+                        </h3>
+                        <a href="cbt_detail.html"><img src="images/r_img.png" alt=""></a>
+                        <div class="lv">
+                          <li>
+                            <span>当月收益率</span>
+                            <span><a href="">25.47%</a></span>
+                          </li>
+                          <li>
+                            <span>最大回撤率</span>
+                            <span>-19.45%</span>
+                          </li>
+                          <li>
+                            <span>最近更新时间</span>
+                            <span><a href="">7日</a> 前</span>
+                          </li>
+                        </div>
+                        <div class="use">
+                            <a href="">1500<span>量币/期</span></a>
+                            <li>
+                             <input type="submit" value="租用" class="iptl">
+                             <input type="submit" value="试用" class="iptr">
+                            </li>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="col-md-4 rmd4">
+                       <div class="charset">
+                         <h3>
+                          <a href="" class="al">R-八阵图-10w</a>
+                          <a href="" class="ar">微量帝</a>
+                        </h3>
+                        <a href="cbt_detail.html"><img src="images/r_img.png" alt=""></a>
+                        <div class="lv">
+                          <li>
+                            <span>当月收益率</span>
+                            <span><a href="">25.47%</a></span>
+                          </li>
+                          <li>
+                            <span>最大回撤率</span>
+                            <span>-19.45%</span>
+                          </li>
+                          <li>
+                            <span>最近更新时间</span>
+                            <span><a href="">7日</a> 前</span>
+                          </li>
+                        </div>
+                        <div class="use">
+                            <a href="">1500<span>量币/期</span></a>
+                            <li>
+                             <input type="submit" value="租用" class="iptl">
+                             <input type="submit" value="试用" class="iptr">
+                            </li>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="col-md-4 rmd4">
+                       <div class="charset">
+                         <h3>
+                          <a href="" class="al">R-八阵图-10w</a>
+                          <a href="" class="ar">微量帝</a>
+                        </h3>
+                        <a href="cbt_detail.html"><img src="images/r_img.png" alt=""></a>
+                        <div class="lv">
+                          <li>
+                            <span>当月收益率</span>
+                            <span><a href="">25.47%</a></span>
+                          </li>
+                          <li>
+                            <span>最大回撤率</span>
+                            <span>-19.45%</span>
+                          </li>
+                          <li>
+                            <span>最近更新时间</span>
+                            <span><a href="">7日</a> 前</span>
+                          </li>
+                        </div>
+                        <div class="use">
+                            <a href="">1500<span>量币/期</span></a>
+                            <li>
+                             <input type="submit" value="租用" class="iptl">
+                             <input type="submit" value="试用" class="iptr">
+                            </li>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="col-md-4 rmd4">
+                       <div class="charset">
+                         <h3>
+                          <a href="" class="al">R-八阵图-10w</a>
+                          <a href="" class="ar">微量帝</a>
+                        </h3>
+                        <a href="cbt_detail.html"><img src="images/r_img.png" alt=""></a>
+                        <div class="lv">
+                          <li>
+                            <span>当月收益率</span>
+                            <span><a href="">25.47%</a></span>
+                          </li>
+                          <li>
+                            <span>最大回撤率</span>
+                            <span>-19.45%</span>
+                          </li>
+                          <li>
+                            <span>最近更新时间</span>
+                            <span><a href="">7日</a> 前</span>
+                          </li>
+                        </div>
+                        <div class="use">
+                            <a href="">1500<span>量币/期</span></a>
+                            <li>
+                             <input type="submit" value="租用" class="iptl">
+                             <input type="submit" value="试用" class="iptr">
+                            </li>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="col-md-4 rmd4">
+                       <div class="charset">
+                         <h3>
+                          <a href="" class="al">R-八阵图-10w</a>
+                          <a href="" class="ar">微量帝</a>
+                        </h3>
+                        <a href="cbt_detail.html"><img src="images/r_img.png" alt=""></a>
+                        <div class="lv">
+                          <li>
+                            <span>当月收益率</span>
+                            <span><a href="">25.47%</a></span>
+                          </li>
+                          <li>
+                            <span>最大回撤率</span>
+                            <span>-19.45%</span>
+                          </li>
+                          <li>
+                            <span>最近更新时间</span>
+                            <span><a href="">7日</a> 前</span>
+                          </li>
+                        </div>
+                        <div class="use">
+                            <a href="">1500<span>量币/期</span></a>
+                            <li>
+                             <input type="submit" value="租用" class="iptl">
+                             <input type="submit" value="试用" class="iptr">
+                            </li>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="col-md-4 rmd4">
+                       <div class="charset">
+                         <h3>
+                          <a href="" class="al">R-八阵图-10w</a>
+                          <a href="" class="ar">微量帝</a>
+                        </h3>
+                        <a href="cbt_detail.html"><img src="images/r_img.png" alt=""></a>
+                        <div class="lv">
+                          <li>
+                            <span>当月收益率</span>
+                            <span><a href="">25.47%</a></span>
+                          </li>
+                          <li>
+                            <span>最大回撤率</span>
+                            <span>-19.45%</span>
+                          </li>
+                          <li>
+                            <span>最近更新时间</span>
+                            <span><a href="">7日</a> 前</span>
+                          </li>
+                        </div>
+                        <div class="use">
+                            <a href="">1500<span>量币/期</span></a>
+                            <li>
+                             <input type="submit" value="租用" class="iptl">
+                             <input type="submit" value="试用" class="iptr">
+                            </li>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="col-md-4 rmd4">
+                       <div class="charset">
+                         <h3>
+                          <a href="" class="al">R-八阵图-10w</a>
+                          <a href="" class="ar">微量帝</a>
+                        </h3>
+                        <a href="cbt_detail.html"><img src="images/r_img.png" alt=""></a>
+                        <div class="lv">
+                          <li>
+                            <span>当月收益率</span>
+                            <span><a href="">25.47%</a></span>
+                          </li>
+                          <li>
+                            <span>最大回撤率</span>
+                            <span>-19.45%</span>
+                          </li>
+                          <li>
+                            <span>最近更新时间</span>
+                            <span><a href="">7日</a> 前</span>
+                          </li>
+                        </div>
+                        <div class="use">
+                            <a href="">1500<span>量币/期</span></a>
+                            <li>
+                             <input type="submit" value="租用" class="iptl">
+                             <input type="submit" value="试用" class="iptr">
+                            </li>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="col-md-4 rmd4">
+                       <div class="charset">
+                         <h3>
+                          <a href="" class="al">R-八阵图-10w</a>
+                          <a href="" class="ar">微量帝</a>
+                        </h3>
+                        <a href="cbt_detail.html"><img src="images/r_img.png" alt=""></a>
+                        <div class="lv">
+                          <li>
+                            <span>当月收益率</span>
+                            <span><a href="">25.47%</a></span>
+                          </li>
+                          <li>
+                            <span>最大回撤率</span>
+                            <span>-19.45%</span>
+                          </li>
+                          <li>
+                            <span>最近更新时间</span>
+                            <span><a href="">7日</a> 前</span>
+                          </li>
+                        </div>
+                        <div class="use">
+                            <a href="">1500<span>量币/期</span></a>
+                            <li>
+                             <input type="submit" value="租用" class="iptl">
+                             <input type="submit" value="试用" class="iptr">
+                            </li>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="col-md-4 rmd4">
+                       <div class="charset">
+                         <h3>
+                          <a href="" class="al">R-八阵图-10w</a>
+                          <a href="" class="ar">微量帝</a>
+                        </h3>
+                        <a href="cbt_detail.html"><img src="images/r_img.png" alt=""></a>
+                        <div class="lv">
+                          <li>
+                            <span>当月收益率</span>
+                            <span><a href="">25.47%</a></span>
+                          </li>
+                          <li>
+                            <span>最大回撤率</span>
+                            <span>-19.45%</span>
+                          </li>
+                          <li>
+                            <span>最近更新时间</span>
+                            <span><a href="">7日</a> 前</span>
+                          </li>
+                        </div>
+                        <div class="use">
+                            <a href="">1500<span>量币/期</span></a>
+                            <li>
+                             <input type="submit" value="租用" class="iptl">
+                             <input type="submit" value="试用" class="iptr">
+                            </li>
+                        </div>
+                       </div>
+                    </div>
+                </div>
+                <div class="col-md-12 ph_con">
+                  <div class="col-md-4 rmd4">
+                       <div class="charset">
+                         <h3>
+                          <a href="" class="al">R-七星飞锤-10w </a>
+                          <a href="" class="ar">微量帝</a>
+                        </h3>
+                        <a href="cbt_detail.html"><img src="images/r_img.png" alt=""></a>
+                        <div class="lv">
+                          <li>
+                            <span>当月收益率</span>
+                            <span><a href="">25.47%</a></span>
+                          </li>
+                          <li>
+                            <span>最大回撤率</span>
+                            <span>-19.45%</span>
+                          </li>
+                          <li>
+                            <span>最近更新时间</span>
+                            <span><a href="">7日</a> 前</span>
+                          </li>
+                        </div>
+                        <div class="use">
+                            <a href="">1500<span>量币/期</span></a>
+                            <li>
+                             <input type="submit" value="租用" class="iptl">
+                             <input type="submit" value="试用" class="iptr">
+                            </li>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="col-md-4 rmd4">
+                       <div class="charset">
+                         <h3>
+                          <a href="" class="al">R-七星飞锤-10w </a>
+                          <a href="" class="ar">微量帝</a>
+                        </h3>
+                        <a href="cbt_detail.html"><img src="images/r_img.png" alt=""></a>
+                        <div class="lv">
+                          <li>
+                            <span>当月收益率</span>
+                            <span><a href="">25.47%</a></span>
+                          </li>
+                          <li>
+                            <span>最大回撤率</span>
+                            <span>-19.45%</span>
+                          </li>
+                          <li>
+                            <span>最近更新时间</span>
+                            <span><a href="">7日</a> 前</span>
+                          </li>
+                        </div>
+                        <div class="use">
+                            <a href="">1500<span>量币/期</span></a>
+                            <li>
+                             <input type="submit" value="租用" class="iptl">
+                             <input type="submit" value="试用" class="iptr">
+                            </li>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="col-md-4 rmd4">
+                       <div class="charset">
+                         <h3>
+                          <a href="" class="al">R-七星飞锤-10w </a>
+                          <a href="" class="ar">微量帝</a>
+                        </h3>
+                        <a href="cbt_detail.html"><img src="images/r_img.png" alt=""></a>
+                        <div class="lv">
+                          <li>
+                            <span>当月收益率</span>
+                            <span><a href="">25.47%</a></span>
+                          </li>
+                          <li>
+                            <span>最大回撤率</span>
+                            <span>-19.45%</span>
+                          </li>
+                          <li>
+                            <span>最近更新时间</span>
+                            <span><a href="">7日</a> 前</span>
+                          </li>
+                        </div>
+                        <div class="use">
+                            <a href="">1500<span>量币/期</span></a>
+                            <li>
+                             <input type="submit" value="租用" class="iptl">
+                             <input type="submit" value="试用" class="iptr">
+                            </li>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="col-md-4 rmd4">
+                       <div class="charset">
+                         <h3>
+                          <a href="" class="al">R-七星飞锤-10w </a>
+                          <a href="" class="ar">微量帝</a>
+                        </h3>
+                        <a href="cbt_detail.html"><img src="images/r_img.png" alt=""></a>
+                        <div class="lv">
+                          <li>
+                            <span>当月收益率</span>
+                            <span><a href="">25.47%</a></span>
+                          </li>
+                          <li>
+                            <span>最大回撤率</span>
+                            <span>-19.45%</span>
+                          </li>
+                          <li>
+                            <span>最近更新时间</span>
+                            <span><a href="">7日</a> 前</span>
+                          </li>
+                        </div>
+                        <div class="use">
+                            <a href="">1500<span>量币/期</span></a>
+                            <li>
+                             <input type="submit" value="租用" class="iptl">
+                             <input type="submit" value="试用" class="iptr">
+                            </li>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="col-md-4 rmd4">
+                       <div class="charset">
+                         <h3>
+                          <a href="" class="al">R-七星飞锤-10w </a>
+                          <a href="" class="ar">微量帝</a>
+                        </h3>
+                        <a href="cbt_detail.html"><img src="images/r_img.png" alt=""></a>
+                        <div class="lv">
+                          <li>
+                            <span>当月收益率</span>
+                            <span><a href="">25.47%</a></span>
+                          </li>
+                          <li>
+                            <span>最大回撤率</span>
+                            <span>-19.45%</span>
+                          </li>
+                          <li>
+                            <span>最近更新时间</span>
+                            <span><a href="">7日</a> 前</span>
+                          </li>
+                        </div>
+                        <div class="use">
+                            <a href="">1500<span>量币/期</span></a>
+                            <li>
+                             <input type="submit" value="租用" class="iptl">
+                             <input type="submit" value="试用" class="iptr">
+                            </li>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="col-md-4 rmd4">
+                       <div class="charset">
+                         <h3>
+                          <a href="" class="al">R-七星飞锤-10w </a>
+                          <a href="" class="ar">微量帝</a>
+                        </h3>
+                        <a href="cbt_detail.html"><img src="images/r_img.png" alt=""></a>
+                        <div class="lv">
+                          <li>
+                            <span>当月收益率</span>
+                            <span><a href="">25.47%</a></span>
+                          </li>
+                          <li>
+                            <span>最大回撤率</span>
+                            <span>-19.45%</span>
+                          </li>
+                          <li>
+                            <span>最近更新时间</span>
+                            <span><a href="">7日</a> 前</span>
+                          </li>
+                        </div>
+                        <div class="use">
+                            <a href="">1500<span>量币/期</span></a>
+                            <li>
+                             <input type="submit" value="租用" class="iptl">
+                             <input type="submit" value="试用" class="iptr">
+                            </li>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="col-md-4 rmd4">
+                       <div class="charset">
+                         <h3>
+                          <a href="" class="al">R-七星飞锤-10w </a>
+                          <a href="" class="ar">微量帝</a>
+                        </h3>
+                        <a href="cbt_detail.html"><img src="images/r_img.png" alt=""></a>
+                        <div class="lv">
+                          <li>
+                            <span>当月收益率</span>
+                            <span><a href="">25.47%</a></span>
+                          </li>
+                          <li>
+                            <span>最大回撤率</span>
+                            <span>-19.45%</span>
+                          </li>
+                          <li>
+                            <span>最近更新时间</span>
+                            <span><a href="">7日</a> 前</span>
+                          </li>
+                        </div>
+                        <div class="use">
+                            <a href="">1500<span>量币/期</span></a>
+                            <li>
+                             <input type="submit" value="租用" class="iptl">
+                             <input type="submit" value="试用" class="iptr">
+                            </li>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="col-md-4 rmd4">
+                       <div class="charset">
+                         <h3>
+                          <a href="" class="al">R-七星飞锤-10w </a>
+                          <a href="" class="ar">微量帝</a>
+                        </h3>
+                        <a href="cbt_detail.html"><img src="images/r_img.png" alt=""></a>
+                        <div class="lv">
+                          <li>
+                            <span>当月收益率</span>
+                            <span><a href="">25.47%</a></span>
+                          </li>
+                          <li>
+                            <span>最大回撤率</span>
+                            <span>-19.45%</span>
+                          </li>
+                          <li>
+                            <span>最近更新时间</span>
+                            <span><a href="">7日</a> 前</span>
+                          </li>
+                        </div>
+                        <div class="use">
+                            <a href="">1500<span>量币/期</span></a>
+                            <li>
+                             <input type="submit" value="租用" class="iptl">
+                             <input type="submit" value="试用" class="iptr">
+                            </li>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="col-md-4 rmd4">
+                       <div class="charset">
+                         <h3>
+                          <a href="" class="al">R-七星飞锤-10w </a>
+                          <a href="" class="ar">微量帝</a>
+                        </h3>
+                        <a href="cbt_detail.html"><img src="images/r_img.png" alt=""></a>
+                        <div class="lv">
+                          <li>
+                            <span>当月收益率</span>
+                            <span><a href="">25.47%</a></span>
+                          </li>
+                          <li>
+                            <span>最大回撤率</span>
+                            <span>-19.45%</span>
+                          </li>
+                          <li>
+                            <span>最近更新时间</span>
+                            <span><a href="">7日</a> 前</span>
+                          </li>
+                        </div>
+                        <div class="use">
+                            <a href="">1500<span>量币/期</span></a>
+                            <li>
+                             <input type="submit" value="租用" class="iptl">
+                             <input type="submit" value="试用" class="iptr">
+                            </li>
+                        </div>
+                       </div>
+                    </div>
+                </div>
+                <div class="col-md-12 ph_con">
+                    <div class="col-md-4 rmd4">
+                       <div class="charset">
+                         <h3>
+                          <a href="" class="al">R-水晶剑-5W </a>
+                          <a href="" class="ar">微量帝</a>
+                        </h3>
+                        <a href="cbt_detail.html"><img src="images/r_img.png" alt=""></a>
+                        <div class="lv">
+                          <li>
+                            <span>当月收益率</span>
+                            <span><a href="">25.47%</a></span>
+                          </li>
+                          <li>
+                            <span>最大回撤率</span>
+                            <span>-19.45%</span>
+                          </li>
+                          <li>
+                            <span>最近更新时间</span>
+                            <span><a href="">7日</a> 前</span>
+                          </li>
+                        </div>
+                        <div class="use">
+                            <a href="">1500<span>量币/期</span></a>
+                            <li>
+                             <input type="submit" value="租用" class="iptl">
+                             <input type="submit" value="试用" class="iptr">
+                            </li>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="col-md-4 rmd4">
+                       <div class="charset">
+                         <h3>
+                          <a href="" class="al">R-水晶剑-5W </a>
+                          <a href="" class="ar">微量帝</a>
+                        </h3>
+                        <a href="cbt_detail.html"><img src="images/r_img.png" alt=""></a>
+                        <div class="lv">
+                          <li>
+                            <span>当月收益率</span>
+                            <span><a href="">25.47%</a></span>
+                          </li>
+                          <li>
+                            <span>最大回撤率</span>
+                            <span>-19.45%</span>
+                          </li>
+                          <li>
+                            <span>最近更新时间</span>
+                            <span><a href="">7日</a> 前</span>
+                          </li>
+                        </div>
+                        <div class="use">
+                            <a href="">1500<span>量币/期</span></a>
+                            <li>
+                             <input type="submit" value="租用" class="iptl">
+                             <input type="submit" value="试用" class="iptr">
+                            </li>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="col-md-4 rmd4">
+                       <div class="charset">
+                         <h3>
+                          <a href="" class="al">R-水晶剑-5W </a>
+                          <a href="" class="ar">微量帝</a>
+                        </h3>
+                        <a href="cbt_detail.html"><img src="images/r_img.png" alt=""></a>
+                        <div class="lv">
+                          <li>
+                            <span>当月收益率</span>
+                            <span><a href="">25.47%</a></span>
+                          </li>
+                          <li>
+                            <span>最大回撤率</span>
+                            <span>-19.45%</span>
+                          </li>
+                          <li>
+                            <span>最近更新时间</span>
+                            <span><a href="">7日</a> 前</span>
+                          </li>
+                        </div>
+                        <div class="use">
+                            <a href="">1500<span>量币/期</span></a>
+                            <li>
+                             <input type="submit" value="租用" class="iptl">
+                             <input type="submit" value="试用" class="iptr">
+                            </li>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="col-md-4 rmd4">
+                       <div class="charset">
+                         <h3>
+                          <a href="" class="al">R-水晶剑-5W </a>
+                          <a href="" class="ar">微量帝</a>
+                        </h3>
+                        <a href="cbt_detail.html"><img src="images/r_img.png" alt=""></a>
+                        <div class="lv">
+                          <li>
+                            <span>当月收益率</span>
+                            <span><a href="">25.47%</a></span>
+                          </li>
+                          <li>
+                            <span>最大回撤率</span>
+                            <span>-19.45%</span>
+                          </li>
+                          <li>
+                            <span>最近更新时间</span>
+                            <span><a href="">7日</a> 前</span>
+                          </li>
+                        </div>
+                        <div class="use">
+                            <a href="">1500<span>量币/期</span></a>
+                            <li>
+                             <input type="submit" value="租用" class="iptl">
+                             <input type="submit" value="试用" class="iptr">
+                            </li>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="col-md-4 rmd4">
+                       <div class="charset">
+                         <h3>
+                          <a href="" class="al">R-水晶剑-5W </a>
+                          <a href="" class="ar">微量帝</a>
+                        </h3>
+                        <a href="cbt_detail.html"><img src="images/r_img.png" alt=""></a>
+                        <div class="lv">
+                          <li>
+                            <span>当月收益率</span>
+                            <span><a href="">25.47%</a></span>
+                          </li>
+                          <li>
+                            <span>最大回撤率</span>
+                            <span>-19.45%</span>
+                          </li>
+                          <li>
+                            <span>最近更新时间</span>
+                            <span><a href="">7日</a> 前</span>
+                          </li>
+                        </div>
+                        <div class="use">
+                            <a href="">1500<span>量币/期</span></a>
+                            <li>
+                             <input type="submit" value="租用" class="iptl">
+                             <input type="submit" value="试用" class="iptr">
+                            </li>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="col-md-4 rmd4">
+                       <div class="charset">
+                         <h3>
+                          <a href="" class="al">R-水晶剑-5W </a>
+                          <a href="" class="ar">微量帝</a>
+                        </h3>
+                        <a href="cbt_detail.html"><img src="images/r_img.png" alt=""></a>
+                        <div class="lv">
+                          <li>
+                            <span>当月收益率</span>
+                            <span><a href="">25.47%</a></span>
+                          </li>
+                          <li>
+                            <span>最大回撤率</span>
+                            <span>-19.45%</span>
+                          </li>
+                          <li>
+                            <span>最近更新时间</span>
+                            <span><a href="">7日</a> 前</span>
+                          </li>
+                        </div>
+                        <div class="use">
+                            <a href="">1500<span>量币/期</span></a>
+                            <li>
+                             <input type="submit" value="租用" class="iptl">
+                             <input type="submit" value="试用" class="iptr">
+                            </li>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="col-md-4 rmd4">
+                       <div class="charset">
+                         <h3>
+                          <a href="" class="al">R-水晶剑-5W </a>
+                          <a href="" class="ar">微量帝</a>
+                        </h3>
+                        <a href="cbt_detail.html"><img src="images/r_img.png" alt=""></a>
+                        <div class="lv">
+                          <li>
+                            <span>当月收益率</span>
+                            <span><a href="">25.47%</a></span>
+                          </li>
+                          <li>
+                            <span>最大回撤率</span>
+                            <span>-19.45%</span>
+                          </li>
+                          <li>
+                            <span>最近更新时间</span>
+                            <span><a href="">7日</a> 前</span>
+                          </li>
+                        </div>
+                        <div class="use">
+                            <a href="">1500<span>量币/期</span></a>
+                            <li>
+                             <input type="submit" value="租用" class="iptl">
+                             <input type="submit" value="试用" class="iptr">
+                            </li>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="col-md-4 rmd4">
+                       <div class="charset">
+                         <h3>
+                          <a href="" class="al">R-水晶剑-5W </a>
+                          <a href="" class="ar">微量帝</a>
+                        </h3>
+                        <a href="cbt_detail.html"><img src="images/r_img.png" alt=""></a>
+                        <div class="lv">
+                          <li>
+                            <span>当月收益率</span>
+                            <span><a href="">25.47%</a></span>
+                          </li>
+                          <li>
+                            <span>最大回撤率</span>
+                            <span>-19.45%</span>
+                          </li>
+                          <li>
+                            <span>最近更新时间</span>
+                            <span><a href="">7日</a> 前</span>
+                          </li>
+                        </div>
+                        <div class="use">
+                            <a href="">1500<span>量币/期</span></a>
+                            <li>
+                             <input type="submit" value="租用" class="iptl">
+                             <input type="submit" value="试用" class="iptr">
+                            </li>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="col-md-4 rmd4">
+                       <div class="charset">
+                         <h3>
+                          <a href="" class="al">R-水晶剑-5W </a>
+                          <a href="" class="ar">微量帝</a>
+                        </h3>
+                        <a href="cbt_detail.html"><img src="images/r_img.png" alt=""></a>
+                        <div class="lv">
+                          <li>
+                            <span>当月收益率</span>
+                            <span><a href="">25.47%</a></span>
+                          </li>
+                          <li>
+                            <span>最大回撤率</span>
+                            <span>-19.45%</span>
+                          </li>
+                          <li>
+                            <span>最近更新时间</span>
+                            <span><a href="">7日</a> 前</span>
+                          </li>
+                        </div>
+                        <div class="use">
+                            <a href="">1500<span>量币/期</span></a>
+                            <li>
+                             <input type="submit" value="租用" class="iptl">
+                             <input type="submit" value="试用" class="iptr">
+                            </li>
+                        </div>
+                       </div>
+                    </div>
+                </div>
+                <div class="col-md-12 ph_con">
+                    <div class="col-md-4 rmd4">
+                       <div class="charset">
+                         <h3>
+                          <a href="" class="al">R-扬帆起航-5w </a>
+                          <a href="" class="ar">微量帝</a>
+                        </h3>
+                        <a href="cbt_detail.html"><img src="images/r_img.png" alt=""></a>
+                        <div class="lv">
+                          <li>
+                            <span>当月收益率</span>
+                            <span><a href="">25.47%</a></span>
+                          </li>
+                          <li>
+                            <span>最大回撤率</span>
+                            <span>-19.45%</span>
+                          </li>
+                          <li>
+                            <span>最近更新时间</span>
+                            <span><a href="">7日</a> 前</span>
+                          </li>
+                        </div>
+                        <div class="use">
+                            <a href="">1500<span>量币/期</span></a>
+                            <li>
+                             <input type="submit" value="租用" class="iptl">
+                             <input type="submit" value="试用" class="iptr">
+                            </li>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="col-md-4 rmd4">
+                       <div class="charset">
+                         <h3>
+                          <a href="" class="al">R-扬帆起航-5w  </a>
+                          <a href="" class="ar">微量帝</a>
+                        </h3>
+                        <a href="cbt_detail.html"><img src="images/r_img.png" alt=""></a>
+                        <div class="lv">
+                          <li>
+                            <span>当月收益率</span>
+                            <span><a href="">25.47%</a></span>
+                          </li>
+                          <li>
+                            <span>最大回撤率</span>
+                            <span>-19.45%</span>
+                          </li>
+                          <li>
+                            <span>最近更新时间</span>
+                            <span><a href="">7日</a> 前</span>
+                          </li>
+                        </div>
+                        <div class="use">
+                            <a href="">1500<span>量币/期</span></a>
+                            <li>
+                             <input type="submit" value="租用" class="iptl">
+                             <input type="submit" value="试用" class="iptr">
+                            </li>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="col-md-4 rmd4">
+                       <div class="charset">
+                         <h3>
+                          <a href="" class="al">R-扬帆起航-5w  </a>
+                          <a href="" class="ar">微量帝</a>
+                        </h3>
+                        <a href="cbt_detail.html"><img src="images/r_img.png" alt=""></a>
+                        <div class="lv">
+                          <li>
+                            <span>当月收益率</span>
+                            <span><a href="">25.47%</a></span>
+                          </li>
+                          <li>
+                            <span>最大回撤率</span>
+                            <span>-19.45%</span>
+                          </li>
+                          <li>
+                            <span>最近更新时间</span>
+                            <span><a href="">7日</a> 前</span>
+                          </li>
+                        </div>
+                        <div class="use">
+                            <a href="">1500<span>量币/期</span></a>
+                            <li>
+                             <input type="submit" value="租用" class="iptl">
+                             <input type="submit" value="试用" class="iptr">
+                            </li>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="col-md-4 rmd4">
+                       <div class="charset">
+                         <h3>
+                          <a href="" class="al">R-扬帆起航-5w  </a>
+                          <a href="" class="ar">微量帝</a>
+                        </h3>
+                        <a href="cbt_detail.html"><img src="images/r_img.png" alt=""></a>
+                        <div class="lv">
+                          <li>
+                            <span>当月收益率</span>
+                            <span><a href="">25.47%</a></span>
+                          </li>
+                          <li>
+                            <span>最大回撤率</span>
+                            <span>-19.45%</span>
+                          </li>
+                          <li>
+                            <span>最近更新时间</span>
+                            <span><a href="">7日</a> 前</span>
+                          </li>
+                        </div>
+                        <div class="use">
+                            <a href="">1500<span>量币/期</span></a>
+                            <li>
+                             <input type="submit" value="租用" class="iptl">
+                             <input type="submit" value="试用" class="iptr">
+                            </li>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="col-md-4 rmd4">
+                       <div class="charset">
+                         <h3>
+                          <a href="" class="al">R-扬帆起航-5w  </a>
+                          <a href="" class="ar">微量帝</a>
+                        </h3>
+                        <a href="cbt_detail.html"><img src="images/r_img.png" alt=""></a>
+                        <div class="lv">
+                          <li>
+                            <span>当月收益率</span>
+                            <span><a href="">25.47%</a></span>
+                          </li>
+                          <li>
+                            <span>最大回撤率</span>
+                            <span>-19.45%</span>
+                          </li>
+                          <li>
+                            <span>最近更新时间</span>
+                            <span><a href="">7日</a> 前</span>
+                          </li>
+                        </div>
+                        <div class="use">
+                            <a href="">1500<span>量币/期</span></a>
+                            <li>
+                             <input type="submit" value="租用" class="iptl">
+                             <input type="submit" value="试用" class="iptr">
+                            </li>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="col-md-4 rmd4">
+                       <div class="charset">
+                         <h3>
+                          <a href="" class="al">R-扬帆起航-5w  </a>
+                          <a href="" class="ar">微量帝</a>
+                        </h3>
+                        <a href="cbt_detail.html"><img src="images/r_img.png" alt=""></a>
+                        <div class="lv">
+                          <li>
+                            <span>当月收益率</span>
+                            <span><a href="">25.47%</a></span>
+                          </li>
+                          <li>
+                            <span>最大回撤率</span>
+                            <span>-19.45%</span>
+                          </li>
+                          <li>
+                            <span>最近更新时间</span>
+                            <span><a href="">7日</a> 前</span>
+                          </li>
+                        </div>
+                        <div class="use">
+                            <a href="">1500<span>量币/期</span></a>
+                            <li>
+                             <input type="submit" value="租用" class="iptl">
+                             <input type="submit" value="试用" class="iptr">
+                            </li>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="col-md-4 rmd4">
+                       <div class="charset">
+                         <h3>
+                          <a href="" class="al">R-扬帆起航-5w  </a>
+                          <a href="" class="ar">微量帝</a>
+                        </h3>
+                        <a href="cbt_detail.html"><img src="images/r_img.png" alt=""></a>
+                        <div class="lv">
+                          <li>
+                            <span>当月收益率</span>
+                            <span><a href="">25.47%</a></span>
+                          </li>
+                          <li>
+                            <span>最大回撤率</span>
+                            <span>-19.45%</span>
+                          </li>
+                          <li>
+                            <span>最近更新时间</span>
+                            <span><a href="">7日</a> 前</span>
+                          </li>
+                        </div>
+                        <div class="use">
+                            <a href="">1500<span>量币/期</span></a>
+                            <li>
+                             <input type="submit" value="租用" class="iptl">
+                             <input type="submit" value="试用" class="iptr">
+                            </li>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="col-md-4 rmd4">
+                       <div class="charset">
+                         <h3>
+                          <a href="" class="al">R-扬帆起航-5w  </a>
+                          <a href="" class="ar">微量帝</a>
+                        </h3>
+                        <a href="cbt_detail.html"><img src="images/r_img.png" alt=""></a>
+                        <div class="lv">
+                          <li>
+                            <span>当月收益率</span>
+                            <span><a href="">25.47%</a></span>
+                          </li>
+                          <li>
+                            <span>最大回撤率</span>
+                            <span>-19.45%</span>
+                          </li>
+                          <li>
+                            <span>最近更新时间</span>
+                            <span><a href="">7日</a> 前</span>
+                          </li>
+                        </div>
+                        <div class="use">
+                            <a href="">1500<span>量币/期</span></a>
+                            <li>
+                             <input type="submit" value="租用" class="iptl">
+                             <input type="submit" value="试用" class="iptr">
+                            </li>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="col-md-4 rmd4">
+                       <div class="charset">
+                         <h3>
+                          <a href="" class="al">R-扬帆起航-5w </a>
+                          <a href="" class="ar">微量帝</a>
+                        </h3>
+                        <a href="cbt_detail.html"><img src="images/r_img.png" alt=""></a>
+                        <div class="lv">
+                          <li>
+                            <span>当月收益率</span>
+                            <span><a href="">25.47%</a></span>
+                          </li>
+                          <li>
+                            <span>最大回撤率</span>
+                            <span>-19.45%</span>
+                          </li>
+                          <li>
+                            <span>最近更新时间</span>
+                            <span><a href="">7日</a> 前</span>
+                          </li>
+                        </div>
+                        <div class="use">
+                            <a href="">1500<span>量币/期</span></a>
+                            <li>
+                             <input type="submit" value="租用" class="iptl">
+                             <input type="submit" value="试用" class="iptr">
+                            </li>
+                        </div>
+                       </div>
+                    </div>
+                </div>
+                <div class="col-md-12 ph_con">
+                    <div class="col-md-4 rmd4">
+                       <div class="charset">
+                         <h3>
+                          <a href="" class="al">R-鹰击长空-5w </a>
+                          <a href="" class="ar">微量帝</a>
+                        </h3>
+                        <a href="cbt_detail.html"><img src="images/r_img.png" alt=""></a>
+                        <div class="lv">
+                          <li>
+                            <span>当月收益率</span>
+                            <span><a href="">25.47%</a></span>
+                          </li>
+                          <li>
+                            <span>最大回撤率</span>
+                            <span>-19.45%</span>
+                          </li>
+                          <li>
+                            <span>最近更新时间</span>
+                            <span><a href="">7日</a> 前</span>
+                          </li>
+                        </div>
+                        <div class="use">
+                            <a href="">1500<span>量币/期</span></a>
+                            <li>
+                             <input type="submit" value="租用" class="iptl">
+                             <input type="submit" value="试用" class="iptr">
+                            </li>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="col-md-4 rmd4">
+                       <div class="charset">
+                         <h3>
+                          <a href="" class="al">R-鹰击长空-5w   </a>
+                          <a href="" class="ar">微量帝</a>
+                        </h3>
+                        <a href="cbt_detail.html"><img src="images/r_img.png" alt=""></a>
+                        <div class="lv">
+                          <li>
+                            <span>当月收益率</span>
+                            <span><a href="">25.47%</a></span>
+                          </li>
+                          <li>
+                            <span>最大回撤率</span>
+                            <span>-19.45%</span>
+                          </li>
+                          <li>
+                            <span>最近更新时间</span>
+                            <span><a href="">7日</a> 前</span>
+                          </li>
+                        </div>
+                        <div class="use">
+                            <a href="">1500<span>量币/期</span></a>
+                            <li>
+                             <input type="submit" value="租用" class="iptl">
+                             <input type="submit" value="试用" class="iptr">
+                            </li>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="col-md-4 rmd4">
+                       <div class="charset">
+                         <h3>
+                          <a href="" class="al">R-鹰击长空-5w   </a>
+                          <a href="" class="ar">微量帝</a>
+                        </h3>
+                        <a href="cbt_detail.html"><img src="images/r_img.png" alt=""></a>
+                        <div class="lv">
+                          <li>
+                            <span>当月收益率</span>
+                            <span><a href="">25.47%</a></span>
+                          </li>
+                          <li>
+                            <span>最大回撤率</span>
+                            <span>-19.45%</span>
+                          </li>
+                          <li>
+                            <span>最近更新时间</span>
+                            <span><a href="">7日</a> 前</span>
+                          </li>
+                        </div>
+                        <div class="use">
+                            <a href="">1500<span>量币/期</span></a>
+                            <li>
+                             <input type="submit" value="租用" class="iptl">
+                             <input type="submit" value="试用" class="iptr">
+                            </li>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="col-md-4 rmd4">
+                       <div class="charset">
+                         <h3>
+                          <a href="" class="al">R-鹰击长空-5w   </a>
+                          <a href="" class="ar">微量帝</a>
+                        </h3>
+                        <a href="cbt_detail.html"><img src="images/r_img.png" alt=""></a>
+                        <div class="lv">
+                          <li>
+                            <span>当月收益率</span>
+                            <span><a href="">25.47%</a></span>
+                          </li>
+                          <li>
+                            <span>最大回撤率</span>
+                            <span>-19.45%</span>
+                          </li>
+                          <li>
+                            <span>最近更新时间</span>
+                            <span><a href="">7日</a> 前</span>
+                          </li>
+                        </div>
+                        <div class="use">
+                            <a href="">1500<span>量币/期</span></a>
+                            <li>
+                             <input type="submit" value="租用" class="iptl">
+                             <input type="submit" value="试用" class="iptr">
+                            </li>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="col-md-4 rmd4">
+                       <div class="charset">
+                         <h3>
+                          <a href="" class="al">R-鹰击长空-5w   </a>
+                          <a href="" class="ar">微量帝</a>
+                        </h3>
+                        <a href="cbt_detail.html"><img src="images/r_img.png" alt=""></a>
+                        <div class="lv">
+                          <li>
+                            <span>当月收益率</span>
+                            <span><a href="">25.47%</a></span>
+                          </li>
+                          <li>
+                            <span>最大回撤率</span>
+                            <span>-19.45%</span>
+                          </li>
+                          <li>
+                            <span>最近更新时间</span>
+                            <span><a href="">7日</a> 前</span>
+                          </li>
+                        </div>
+                        <div class="use">
+                            <a href="">1500<span>量币/期</span></a>
+                            <li>
+                             <input type="submit" value="租用" class="iptl">
+                             <input type="submit" value="试用" class="iptr">
+                            </li>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="col-md-4 rmd4">
+                       <div class="charset">
+                         <h3>
+                          <a href="" class="al">R-鹰击长空-5w   </a>
+                          <a href="" class="ar">微量帝</a>
+                        </h3>
+                        <a href="cbt_detail.html"><img src="images/r_img.png" alt=""></a>
+                        <div class="lv">
+                          <li>
+                            <span>当月收益率</span>
+                            <span><a href="">25.47%</a></span>
+                          </li>
+                          <li>
+                            <span>最大回撤率</span>
+                            <span>-19.45%</span>
+                          </li>
+                          <li>
+                            <span>最近更新时间</span>
+                            <span><a href="">7日</a> 前</span>
+                          </li>
+                        </div>
+                        <div class="use">
+                            <a href="">1500<span>量币/期</span></a>
+                            <li>
+                             <input type="submit" value="租用" class="iptl">
+                             <input type="submit" value="试用" class="iptr">
+                            </li>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="col-md-4 rmd4">
+                       <div class="charset">
+                         <h3>
+                          <a href="" class="al">R-鹰击长空-5w   </a>
+                          <a href="" class="ar">微量帝</a>
+                        </h3>
+                        <a href="cbt_detail.html"><img src="images/r_img.png" alt=""></a>
+                        <div class="lv">
+                          <li>
+                            <span>当月收益率</span>
+                            <span><a href="">25.47%</a></span>
+                          </li>
+                          <li>
+                            <span>最大回撤率</span>
+                            <span>-19.45%</span>
+                          </li>
+                          <li>
+                            <span>最近更新时间</span>
+                            <span><a href="">7日</a> 前</span>
+                          </li>
+                        </div>
+                        <div class="use">
+                            <a href="">1500<span>量币/期</span></a>
+                            <li>
+                             <input type="submit" value="租用" class="iptl">
+                             <input type="submit" value="试用" class="iptr">
+                            </li>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="col-md-4 rmd4">
+                       <div class="charset">
+                         <h3>
+                          <a href="" class="al">R-鹰击长空-5w   </a>
+                          <a href="" class="ar">微量帝</a>
+                        </h3>
+                        <a href="cbt_detail.html"><img src="images/r_img.png" alt=""></a>
+                        <div class="lv">
+                          <li>
+                            <span>当月收益率</span>
+                            <span><a href="">25.47%</a></span>
+                          </li>
+                          <li>
+                            <span>最大回撤率</span>
+                            <span>-19.45%</span>
+                          </li>
+                          <li>
+                            <span>最近更新时间</span>
+                            <span><a href="">7日</a> 前</span>
+                          </li>
+                        </div>
+                        <div class="use">
+                            <a href="">1500<span>量币/期</span></a>
+                            <li>
+                             <input type="submit" value="租用" class="iptl">
+                             <input type="submit" value="试用" class="iptr">
+                            </li>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="col-md-4 rmd4">
+                       <div class="charset">
+                         <h3>
+                          <a href="" class="al">R-鹰击长空-5w  </a>
+                          <a href="" class="ar">微量帝</a>
+                         </h3>
+                        <a href="cbt_detail.html"><img src="images/r_img.png" alt=""></a>
+                        <div class="lv">
+                          <li>
+                            <span>当月收益率</span>
+                            <span><a href="">25.47%</a></span>
+                          </li>
+                          <li>
+                            <span>最大回撤率</span>
+                            <span>-19.45%</span>
+                          </li>
+                          <li>
+                            <span>最近更新时间</span>
+                            <span><a href="">7日</a> 前</span>
+                          </li>
+                        </div>
+                        <div class="use">
+                            <a href="">1500<span>量币/期</span></a>
+                            <li>
+                             <input type="submit" value="租用" class="iptl">
+                             <input type="submit" value="试用" class="iptr">
+                            </li>
+                        </div>
+                       </div>
+                    </div>
+                </div>
+                <div class="col-md-12 page">
+                     <ul>
+                        <li><a href="">上一页</a></li>
+                        <li class="on"><a href="">1</a></li>
+                        <li><a href="">2</a></li>
+                        <li><a href="">3</a></li>
+                        <li><a href="">4</a></li>
+                        <li><a href="">5</a></li>
+                        <li><a href="">6</a></li>
+                        <li><a href="">7</a></li>
+                        <li><a href="">下一页</a></li>
+                      </ul>
+                </div>
+             </div>
+             <div class="col-md-3">
+               <h3 class="tith3">常见问题</h3>
+               <div class="cpro">
+                  <li><a href=""><img src="images/pointer.png" alt="">量化之神支持哪些品种？</a></li>
+                  <li><a href=""><img src="images/pointer.png" alt="">怎样开始交易？</a></li>
+                  <li><a href=""><img src="images/pointer.png" alt="">云交易是什么意思？</a></li>
+                  <li><a href=""><img src="images/pointer.png" alt="">量化之神的云交易是全自动的吗？</a></li>
+                  <li><a href=""><img src="images/pointer.png" alt="">没有交易账户怎么办？</a></li>
+                  <li><a href=""><img src="images/pointer.png" alt="">量化之神平台的安全性怎么保证？</a></li>
+               </div>
+               <h3 class="tith3">使用流程</h3>
+               <div class="u_flow">
+                  <li>
+                    <img src="images/flow1.png" alt="">
+                    <span>租用策略</span>
+                    <p>在策略超市中租用投资策略</p>
+                    <img src="images/icon/arrow-down.svg" alt="">
+                  </li>
+                  <li>
+                    <img src="images/flow2.png" alt="">
+                    <span>开设交易账户</span>
+                    <p>开设期货账户</p>
+                    <img src="images/icon/arrow-down.svg" alt="">
+                  </li>
+                  <li>
+                    <img src="images/flow3.png" alt="">
+                    <span>登录交易账户</span>
+                    <p>在量化之神登录期货账户</p>
+                    <img src="images/icon/arrow-down.svg" alt="">
+                  </li>
+                  <li>
+                    <img src="images/flow4.png" alt="">
+                    <span>启动策略</span>
+                    <p>点击启动，开始自动赚钱</p>
+                    <img src="images/icon/arrow-down.svg" alt="">
+                  </li>
+               </div>
+               <div class="ads">
+                 <a href="">
+                    <img src="images/ads.png" alt="">
+                 </a>
+               </div>
+               <h3 class="tith3">新品推荐</h3>
+               <div class="new_pdt">
+                  <div class="pdt">
+                     <h3><span>G-天英一号-bu0...</span><a href="">小矿工</a></h3>
+                     <div class="pdt_s">
+                       <li> 
+                          <span>当月收益率</span>
+                          <a href="" class="ab">5.57%</a>
+                       </li>
+                       <li>
+                          <span>实盘收益率</span>
+                          <a href="">22.49%</a> 
+                       </li>
+                       <li class="see">
+                          <a href="">查看</a>
+                       </li>
+                     </div>
+                  </div>
+               </div>
+               <div class="new_pdt">
+                  <div class="pdt">
+                     <h3><span>G-天英一号-bu0...</span><a href="">小矿工</a></h3>
+                     <div class="pdt_s">
+                       <li> 
+                          <span>当月收益率</span>
+                          <a href="" class="ab">5.57%</a>
+                       </li>
+                       <li>
+                          <span>实盘收益率</span>
+                          <a href="">22.49%</a> 
+                       </li>
+                       <li class="see">
+                          <a href="">查看</a>
+                       </li>
+                     </div>
+                  </div>
+               </div>
+               <div class="new_pdt">
+                  <div class="pdt">
+                     <h3><span>G-天英一号-bu0...</span><a href="">小矿工</a></h3>
+                     <div class="pdt_s">
+                       <li> 
+                          <span>当月收益率</span>
+                          <a href="" class="ab">5.57%</a>
+                       </li>
+                       <li>
+                          <span>实盘收益率</span>
+                          <a href="">22.49%</a> 
+                       </li>
+                       <li class="see">
+                          <a href="">查看</a>
+                       </li>
+                     </div>
+                  </div>
+               </div>
+             </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- 右侧 -->
+<li id="top">
+      <!-- <img src="images/icon/4.svg" alt=""> -->
+      <img src="images/icon/4.1.svg" alt="">
+</li>
+<script>
+      $('#top').click(function(){$('html,body').animate({scrollTop: '0px'}, 800);});
+</script>
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 f_cont">
+            <div class="col-md-5 f_about">
+                  <ul>
+                    <li class="curren">关于 / About</li>
+                    <li><a href="">关于我们</a></li>
+                    <li><a href="">合作伙伴</a></li>
+                    <li><a href="">加入我们</a></li>
+                    <li><a href="">服务条款</a></li>
+                    <li><a href="">代理加盟</a></li>
+                  </ul>
+                  <ul>
+                    <li class="curren">使用指南 / Guide</li>
+                    <li><a href="">新手指南</a></li>
+                    <li><a href="">使用手册</a></li>
+                    <li><a href="">网站地图</a></li>
+                  </ul>
+                  <ul>
+                    <li class="curren">软件平台 / Software</li>
+                    <li><a href="">手机客户端</a></li>
+                    <li><a href="">量邦天语</a></li>
+                  </ul>
+                  <ul>
+                    <li class="curren"> 社区 / BBS</li>
+                    <li><a href="">量化之神社区</a></li>
+                    <li><a href="">帮我写策略</a></li>
+                  </ul>
+               </div>
+               <div class="col-md-2 f_ewm">
+               <img src="images/wx_qrcode.jpg" alt="">
+               </div>
+               <div class="col-md-5 f_contact">
+                   <div class="fc-top">
+                      <div class="fcimg"><img src="images/icon/dianhua.svg" alt=""></div>
+                      <div class="fccont">
+                        <h6>客服热线</h6>
+                        <span>18948712581</span>
+                      </div>
+                   </div>
+                   <div class="fc-bom">
+                      <li class="qqkf">
+                         <a href=""><img src="images/icon/QQ.svg" alt="">QQ客服</a>
+                         <div class="qq_tab" style="">
+                           <img src="images/wx_qrcode.jpg" alt="">
+                         </div>
+                      </li>
+                      <li class="wxkf">
+                        <a href=""><img src="images/icon/wechat.svg" alt="">微信客服</a>
+                        <div class="wx_tab">
+                         <img src="images/wx_qrcode.jpg" alt="">
+                        </div>
+                      </li>
+                      <li><a href=""><img src="images/icon/wb.svg" alt="">新浪微博</a></li>
+                   </div>
+               </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="f_btm">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 btm">
+                 <p>©  版权所有(ffhapp.net)备案号码:苏B2-20110049</p>
+                 <span>深圳飞飞虎网络科技有限公司</span>
+            </div>
+        </div>
+    </div>           
+ </div>
+</body>
+<script src="js/banner.js"></script>
+<script src="js/tab.js"></script>
+<script src="js/logofixed.js"></script>
+<script src="js/bootstrap.js"></script>
+</html>

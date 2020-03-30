@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>量化之神-首家量化投资-程序化交易</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" /> 
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="js/jquery-1.8.3.min.js"></script>
+</head>
+<body>
+<div class="top">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-12">
+             <div class="col-md-6"></div>
+             <div class="col-md-6 top_bar">
+                 <li class="lz"><a href="login.html">登录</a></li>
+                 <li>丨</li>
+                 <li class="lz"><a href="resiger.html">注册</a></li>
+                 <li>丨</li>
+                 <li><a href="">上传策略</a></li>
+                 <li>丨</li>
+                 <li><a href="">旗下APP</a></li>
+                 <li>丨</li>
+                 <li><a href="admin/mycart.html"><img src="images/icon/gwc.svg" alt=""> 购物车 <span>0</span></a></li>
+                 <li class="account"><a href="admin/admin_index.html"><img src="images/icon/touxiang.svg" alt=""> 我的账户</a>
+                    <!-- <div>
+                       <span><a href=""><img src="images/icon/touxiang.svg" alt=""> 我的账户</a></span>
+                       <span><a href="">交易账户</a></span>
+                       <span><a href="">我的策略</a></span>
+                       <span><a href="">我的订单</a></span>
+                       <span><a href="">量币充值</a></span>
+                       <span><a href="">账户设置</a></span>
+                       <span><a href="">我的消息</a></span>
+                    </div> -->
+                 </li>
+             </div>
+         </div>
+      </div>
+    </div>
+</div>
+<div class="logonav">
+   <div class="container">
+     <div class="row">
+          <div class="col-md-12">
+             <div class="col-md-6">
+               <a href="index.html">
+                <img src="images/logo.jpg" alt="">
+               </a>
+             </div>
+             <div class="col-md-6 nav">
+                 <li class="col-md-2 on"><a href="index.html">首页</a></li>
+                 <li class="col-md-2"><a href=""><img src="images/item.png" alt=""></a></li>
+                 <li class="col-md-2"><a href="combinate.html">组合</a></li>
+                 <li class="col-md-2"><a href="futures.html">期货</a></li>
+                 <li class="col-md-2"><a href="download.html">下载</a></li>
+                 <li class="col-md-2"><a href="community.html">社区</a></li>
+             </div>
+          </div>
+     </div>
+   </div>
+</div>
+<!-- 小屏导航 -->
+<div class="min_logonav">
+   <div class="container">
+     <div class="row">
+          <div class="col-md-12">
+             <div class="col-md-6">
+               <a href="index.html">
+                <img src="images/logo.png" alt="">
+               </a>
+             </div>
+             <div class="col-md-6 nav">
+                 <li class="col-md-2 on"><a href="index.html">首页</a></li>
+                 <li class="col-md-2"><a href=""><img src="images/item.png" alt=""></a></li>
+                 <li class="col-md-2"><a href="combinate.html">组合</a></li>
+                 <li class="col-md-2"><a href="futures.html">期货</a></li>
+                 <li class="col-md-2"><a href="download.html">下载</a></li>
+                 <li class="col-md-2"><a href="community.html">社区</a></li>
+             </div>
+          </div>
+     </div>
+   </div>
+</div>
+ <div class="banner">
+    <ul id="ban">
+       <li id="active"><a href=""><img src="images/ban1.jpg"/></a></li>
+        <li><a href=""><img src="images/ban2.png"/></a></li>
+    </ul>
+    <ul id="number">
+         <li></li>
+         <li></li>
+    </ul>
+    <div id="left"> < </div>
+    <div id="right"> > </div>
+ </div>
+ <div class="mask_item">
+    <span>量化之神累计成交额超过</span>
+    <h3><span>233</span>亿元</h3>
+    <span>实盘运行策略<a href="">2614</a>个</span>
+    <span>累计安全不间断运行<a href="">51614</a>小时</span>
+    <li><a href="resiger.html">立即注册</a></li>
+    <span>注册就送<a href="">新手大礼包</a></span>
+ </div>
+<div class="gonggao">
+  <div class="container">
+     <div class="row">
+          <div class="col-md-12">
+             <div class="col-md-1 ggl"><img src="images/notice.png" alt=""> <span>公告： </span></div>
+             <div class="col-md-9 ggc" id="ggc">
+                <li><a href="">关于量化之神模拟盘使用结束的通知</a><span>2019-03-26</span></li>
+                <li><a href="">关于期货公司第三方程序化接入需报备的通知</a><span>2019-04-25</span></li>
+                <li><a href="">关于看穿式监管认证接入的通知</a><span>2019-06-06</span></li>
+                <li><a href="">关于切换穿透式版本软件的通知</a><span>2019-06-13</span></li>
+             </div>
+             <div class="col-md-2 ggr"><a href="">查看更多</a></div>
+          </div>
+     </div>
+  </div>
+  <script> 
+	var box=document.getElementById("ggc"),can=true; 
+	box.innerHTML+=box.innerHTML; 
+	box.onmouseover=function(){can=false}; 
+	box.onmouseout=function(){can=true}; 
+	new function (){ 
+	var stop=box.scrollTop%20==0&&!can; 
+	if(!stop)box.scrollTop==parseInt(box.scrollHeight/2)?box.scrollTop=0:box.scrollTop++; 
+	setTimeout(arguments.callee,box.scrollTop%20?10:1500); 
+	}; 
+   </script> 
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+           <div class="col-md-3 inx">
+              <div class="inx_img">
+                <a href=""><img src="images/idx1.png" alt=""></a>
+              </div>
+              <div class="inx_ctn">
+                 <h3>安 全</h3>
+                 <span>账户安全：托管在云端</span>
+                 <span>资金安全：资金不出账户</span>
+              </div>
+           </div>
+           <div class="col-md-3 inx">
+              <div class="inx_img">
+                <a href=""><img src="images/idx2.png" alt=""></a>
+              </div>
+              <div class="inx_ctn">
+                 <h3>权 威</h3>
+                 <span>福布斯·中国互联网金融50强</span>
+                 <span>CCTV证券资讯特邀嘉宾</span>
+              </div>
+           </div>
+           <div class="col-md-3 inx">
+              <div class="inx_img">
+                <a href=""><img src="images/idx3.png" alt=""></a>
+              </div>
+              <div class="inx_ctn">
+                 <h3>省 心</h3>
+                 <span>一站式投资理财平台</span>
+                 <span>云交易7X24小时全自动运行</span>
+              </div>
+           </div>
+           <div class="col-md-3 inx">
+              <div class="inx_img">
+                <a href=""><img src="images/idx4.png" alt=""></a>
+              </div>
+              <div class="inx_ctn">
+                 <h3>灵 活</h3>
+                 <span>策略随时启动，随时停止</span>
+                 <span>门槛低，资金周转灵活</span>
+              </div>
+           </div>
+        </div>
+    </div>
+</div>
+<div class="container" style="margin-top: 2rem;">
+     <div class="row">
+          <div class="col-md-12">
+            <div class="col-md-5">
+               <img src="images/idx5.png" alt="">
+            </div>
+            <div class="col-md-5">
+               <img src="images/idx6.png" alt="">
+            </div>
+            <div class="col-md-2 today">
+                <p>量化之神期货今日成交额</p>
+                <span>￥0.00</span>
+            </div>
+          </div>
+     </div>
+</div>
+<div class="jum">
+  <div class="container">
+     <div class="row">
+          <div class="col-md-12">
+             <div class="col-md-4">
+                 <div class="tuijian">
+                    <span>期货策略推荐</span>
+                    <h3>G-相由心生-i02 ...</h3>
+                    <span><a href="">当月收益率</a>29.23%</span>
+                    <li><a href="cbt_detail.html">查看详情</a></li>
+                 </div>
+             </div>
+             <div class="col-md-4">
+                <div class="tuijian">
+                   <img src="images/item_b.png" alt="">
+                </div>
+             </div>
+             <div class="col-md-4">
+                 <div class="tuijian">
+                    <span>组合策略推荐</span>
+                    <h3>R-混沌螺纹-5w</h3>
+                    <span><a href="">当月收益率</a>7.15%</span>
+                    <li><a href="cbt_detail.html">查看详情</a></li>
+                 </div>
+             </div>
+          </div>
+     </div>
+  </div>
+  <div class="container">
+     <div class="row">
+       <div class="col-md-12" style="margin-top: 3rem;">
+         <div class="col-md-3 celu">
+            <h3>期货策略</h3>
+            <span>涨跌都赚，自动赚钱</span>
+            <li><a href="">开通期货账户</a></li>
+         </div>
+         <div class="col-md-9 cxhmd9">
+            <div class="cxh">
+               <a href="">程序化交易</a>
+            </div>
+            <div class="cxh_item">
+                <div class="col-md-4">
+                   <span>G-大道至简-i00 ...</span>
+                </div>
+                <div class="col-md-4"> 
+                   <p>当月收益率<a href="">41.84%</a></p>
+                </div>
+                <div class="col-md-4">
+                    <li><a href="cbt_detail.html">查看详情</a></li>
+                </div>
+            </div>
+            <div class="cxh_item">
+                <div class="col-md-4">
+                   <span>G-逝者如斯-i01 ...</span>
+                </div>
+                <div class="col-md-4"> 
+                   <p>当月收益率<a href="">35.22%</a></p>
+                </div>
+                <div class="col-md-4">
+                    <li><a href="cbt_detail.html">查看详情</a></li>
+                </div>
+            </div>
+            <div class="cxh_item">
+                <div class="col-md-4">
+                   <span>G-双截棍-j015 ...</span>
+                </div>
+                <div class="col-md-4"> 
+                   <p>当月收益率<a href="">30.41%</a></p>
+                </div>
+                <div class="col-md-4">
+                    <li><a href="cbt_detail.html">查看详情</a></li>
+                </div>
+            </div>
+            <div class="cxh_item">
+                <div class="col-md-4">
+                   <span>G-玉女剑-i014 ...</span>
+                </div>
+                <div class="col-md-4"> 
+                   <p>当月收益率<a href="">29.86%</a></p>
+                </div>
+                <div class="col-md-4">
+                    <li><a href="cbt_detail.html">查看详情</a></li>
+                </div>
+            </div>
+            <div class="cxh_item">
+                <div class="col-md-4">
+                   <span>G-相由心生-i02 ...</span>
+                </div>
+                <div class="col-md-4"> 
+                   <p>当月收益率<a href="">29.23%</a></p>
+                </div>
+                <div class="col-md-4">
+                    <li><a href="cbt_detail.html">查看详情</a></li>
+                </div>
+            </div>
+         </div>
+       </div>
+       <div class="col-md-12" style="margin-top: 3rem;">
+         <div class="col-md-3 celu2">
+            <h3>组合策略</h3>
+            <span>多品种搭配盈利稳</span>
+            <li><a href="">开通期货账户</a></li>
+         </div>
+         <div class="col-md-9 cxhmd9">
+            <div class="cxh2">
+               <a href="">程序化交易</a>
+            </div>
+            <div class="cxh_item">
+                <div class="col-md-4">
+                   <span>G-大道至简-i00 ...</span>
+                </div>
+                <div class="col-md-4"> 
+                   <p>当月收益率<a href="">41.84%</a></p>
+                </div>
+                <div class="col-md-4">
+                    <li><a href="cbt_detail.html">查看详情</a></li>
+                </div>
+            </div>
+            <div class="cxh_item">
+                <div class="col-md-4">
+                   <span>G-逝者如斯-i01 ...</span>
+                </div>
+                <div class="col-md-4"> 
+                   <p>当月收益率<a href="">35.22%</a></p>
+                </div>
+                <div class="col-md-4">
+                    <li><a href="cbt_detail.html">查看详情</a></li>
+                </div>
+            </div>
+            <div class="cxh_item">
+                <div class="col-md-4">
+                   <span>G-双截棍-j015 ...</span>
+                </div>
+                <div class="col-md-4"> 
+                   <p>当月收益率<a href="">30.41%</a></p>
+                </div>
+                <div class="col-md-4">
+                    <li><a href="cbt_detail.html">查看详情</a></li>
+                </div>
+            </div>
+            <div class="cxh_item">
+                <div class="col-md-4">
+                   <span>G-玉女剑-i014 ...</span>
+                </div>
+                <div class="col-md-4"> 
+                   <p>当月收益率<a href="">29.86%</a></p>
+                </div>
+                <div class="col-md-4">
+                    <li><a href="cbt_detail.html">查看详情</a></li>
+                </div>
+            </div>
+            <div class="cxh_item">
+                <div class="col-md-4">
+                   <span>G-相由心生-i02 ...</span>
+                </div>
+                <div class="col-md-4"> 
+                   <p>当月收益率<a href="">29.23%</a></p>
+                </div>
+                <div class="col-md-4">
+                    <li><a href="cbt_detail.html">查看详情</a></li>
+                </div>
+            </div>
+         </div>
+       </div>
+       <div class="col-md-12" style="margin-top: 3rem;">
+           <div class="col-md-8">
+             <div class="toutiao">
+               <div class="col-md-7 lianghua">
+                  <span>量化头条</span>
+               </div>
+               <div class="col-md-5 zixun">
+                  <span>专业资讯</span>
+                  <li>1</li>
+                  <li>2</li>
+                  <li>3</li>
+                  <li>4</li>
+                  <span>市场资讯</span>
+                  <li>1</li>
+                  <li>2</li>
+               </div>
+             </div>
+           </div>
+           <div class="col-md-4 hangqing">
+                <h3>行情播报</h3>
+                <li>上证指数[000001] <span>--</span></li>
+                <li>深证指数[399001] <span>--</span></li>
+                <li>创业板指[399006] <span>--</span></li>
+                <li>中小板指[399005] <span>--</span></li>
+                <li>沪深300 [000300] <span>--</span></li>
+           </div>
+       </div>
+     </div>
+   </div>
+</div>
+<!-- 右侧 -->
+<li id="top">
+   	  <img src="images/icon/4.1.svg" alt="">
+   	  <!-- <img src="images/icon/4.1.svg" alt=""> -->
+</li>
+<script>
+   	$('#top').click(function(){$('html,body').animate({scrollTop: '0px'}, 800);});
+</script>
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 f_cont">
+            <div class="col-md-5 f_about">
+                  <ul>
+                    <li class="curren">关于 / About</li>
+                    <li><a href="">关于我们</a></li>
+                    <li><a href="">合作伙伴</a></li>
+                    <li><a href="">加入我们</a></li>
+                    <li><a href="">服务条款</a></li>
+                    <li><a href="">代理加盟</a></li>
+                  </ul>
+                  <ul>
+                    <li class="curren">使用指南 / Guide</li>
+                    <li><a href="">新手指南</a></li>
+                    <li><a href="">使用手册</a></li>
+                    <li><a href="">网站地图</a></li>
+                  </ul>
+                  <ul>
+                    <li class="curren">软件平台 / Software</li>
+                    <li><a href="">手机客户端</a></li>
+                    <li><a href="">量邦天语</a></li>
+                  </ul>
+                  <ul>
+                    <li class="curren"> 社区 / BBS</li>
+                    <li><a href="">量化之神社区</a></li>
+                    <li><a href="">帮我写策略</a></li>
+                  </ul>
+               </div>
+               <div class="col-md-2 f_ewm">
+               <img src="images/wx_qrcode.jpg" alt="">
+               </div>
+               <div class="col-md-5 f_contact">
+                   <div class="fc-top">
+                      <div class="fcimg"><img src="images/icon/dianhua.svg" alt=""></div>
+                      <div class="fccont">
+                        <h6>客服热线</h6>
+                        <span>18948712581</span>
+                      </div>
+                   </div>
+                   <div class="fc-bom">
+                      <li class="qqkf">
+                         <a href=""><img src="images/icon/QQ.svg" alt="">QQ客服</a>
+                         <div class="qq_tab" style="">
+                           <img src="images/wx_qrcode.jpg" alt="">
+                         </div>
+                      </li>
+                      <li class="wxkf">
+                        <a href=""><img src="images/icon/wechat.svg" alt="">微信客服</a>
+                        <div class="wx_tab">
+                         <img src="images/wx_qrcode.jpg" alt="">
+                        </div>
+                      </li>
+                      <li><a href=""><img src="images/icon/wb.svg" alt="">新浪微博</a></li>
+                   </div>
+               </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="f_btm">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 btm">
+                 <p>©  版权所有(ffhapp.net)备案号码:苏B2-20110049</p>
+                 <span>深圳飞飞虎网络科技有限公司</span>
+            </div>
+        </div>
+    </div>           
+ </div>
+</body>
+<script src="js/tab.js"></script>
+<script src="js/banner.js"></script>
+<script src="js/logofixed.js"></script>
+<script src="js/bootstrap.js"></script>
+</html>
